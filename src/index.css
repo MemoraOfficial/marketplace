@@ -1,0 +1,79 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+  background-color: #111;
+}
+
+#background-video{
+
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; /* optional depending on what you want to do in your app */
+  
+  
+  }
+
+*:active{
+  outline: none;
+  box-shadow: none;
+}
+*:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #000;
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 2px;
+  background-color: #000;
+}
+
+.bg-dropdown-arrow {
+  background-origin: content-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+model-viewer.upload-preview {
+  height: 400px;
+}
+
+model-viewer.individual {
+  height: 400px;
+}
+
+model-viewer.featured {
+  height: 500px;
+  width: 500px;
+}
+
+model-viewer.fullscreen {
+  height: 85%;
+  width: 85%;
+}

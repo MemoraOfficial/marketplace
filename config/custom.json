@@ -1,0 +1,41 @@
+{
+	"network": "florencenet",
+	"rpc": "https://api.tez.ie/rpc/florencenet",
+	"bcd": {
+		"api": "https://api.better-call.dev",
+		"gui": "https://better-call.dev"
+	},
+	"tzkt": {
+		"api": "https://api.florencenet.tzkt.io"
+	},
+	"admin": {
+		"address": "tz1QwUFzHxMqUjzfscMbZd1VmARuQUUxqPMq",
+		"secret": "edskRgZWY976MWm3EuGkjjcGqidLMhyZWUBdmVgYR4FNPbtLo214kQMMbUeXn9cNQJT8vHxFzmyEkr4xbTSZz5Agyc9GYkVAcg"
+	},
+	"contracts": {
+		"nftFaucet": "KT1NmwSu45yTJrszntdn7GEzJ1tqMCEGFQKN",
+		"marketplace": {
+			"fixedPrice": {
+				"tez": "KT1P9dcTL2BAWehkCrQMCjkdxGJnZeUYUqTD"
+			}
+		},
+		"ipfsApi": "https://minter-api.tqhosted.com",
+		"ipfsGateway": "https://tqtezos.mypinata.cloud",
+		"contractOpts": {
+			"marketplace": {
+				"adminOnly": true
+			}
+		}
+	},
+	"ipfsApi": "https://minter-api.tqhosted.com",
+	"ipfsGateway": "https://tqtezos.mypinata.cloud",
+	"contractOpts": {
+		"marketplace": {
+			"adminOnly": false,
+			"fee": {
+				"percent": 50,
+				"address": "tz1cSsHTbNRJtGzK3MnmDetmDny5XoPDoRjJ"
+			}
+		}
+	}
+}
