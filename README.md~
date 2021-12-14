@@ -1,8 +1,7 @@
-# Open Minter
-
 ![OpenMinter header](/docs/assets/minterhead.png)
 
-[![license MIT](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE) [![release](https://img.shields.io/github/v/release/tqtezos/minter)](https://github.com/tqtezos/minter)
+[![](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE) [![](https://img.shields.io/github/v/release/tqtezos/minter)](https://github.com/tqtezos/minter)
+
 
 Roadmap and Features
 Welcome curious and inquisitive human.
@@ -71,6 +70,7 @@ Delegated DAO
 ❌ Items Admin
 ❌ Market Admin
 
+
 Frontend (Web)
 Global
 ✅ Redux state
@@ -92,8 +92,10 @@ Tezos Integration
 ❌ Smart Contract API
 ❌ Tezos Profile
 
+
 Backend (Serverless)
 TBD
+
 
 Metaversum
 World
@@ -138,6 +140,7 @@ Chain Integration
 ❌ Smart Contract API
 ❌ Updating Parcels
 
+
 ## OpenMinter
 
 OpenMinter is dApp framework for enabling the creation and collection
@@ -157,7 +160,7 @@ use this software at your own risk.
 To start an OpenMinter instance on `testnet`, make sure you have [yarn][yarn]
 installed (`v1.22.*` or above), and run:
 
-```bash
+```
 yarn install
 yarn start
 ```
@@ -166,28 +169,21 @@ yarn start
 
 OpenMinter supports the following networks and software components:
 
-### 🌐 Mainnet and Florencenet
-
-### 📦 Sandboxed development via [Flextesa][flextesa]
-
-### 🎨 Multimedia NFTs powered by [TZIP-21](https://tzip.tezosagora.org/proposal/tzip-21/)
-
-### ⚙️ Smart contracts based on [minter-sdk](https://github.com/tqtezos/minter-sdk)
-
-### 👛 Wallets compatible with [Beacon](https://www.walletbeacon.io/)
-
-### 📖 Indexing via [tzkt](https://api.tzkt.io/)
-
-### 🚀 [IPFS](https://ipfs.io/) via a local node or [Pinata](https://pinata.cloud/)
-
-### 🏭 Batch minting support
+#### 🌐 Mainnet and Florencenet
+#### 📦 Sandboxed development via [Flextesa][flextesa]
+#### 🎨 Multimedia NFTs powered by [TZIP-21](https://tzip.tezosagora.org/proposal/tzip-21/)
+#### ⚙️ Smart contracts based on [minter-sdk](https://github.com/tqtezos/minter-sdk)
+#### 👛 Wallets compatible with [Beacon](https://www.walletbeacon.io/)
+#### 📖 Indexing via [tzkt](https://api.tzkt.io/)
+#### 🚀 [IPFS](https://ipfs.io/) via a local node or [Pinata](https://pinata.cloud/)
+#### 🏭 Batch minting support
 
 The following dependencies are required to run OpenMinter.
 
-| Dependency       | Version             | Environments |
-| ---------------- | ------------------- | ------------ |
-| [Yarn][yarn]     | `v1.22.*` or above  | All          |
-| [Docker][docker] | `v20.10.*` or above | Sandbox      |
+| Dependency | Version | Environments
+|-|-|-|
+| [Yarn][yarn] | `v1.22.*` or above | All
+| [Docker][docker] | `v20.10.*` or above | Sandbox
 
 [bcdhub]: https://github.com/baking-bad/bcdhub
 [flextesa]: https://gitlab.com/tezos/flextesa
@@ -208,21 +204,21 @@ Each network has its own configuration file in the `config` folder under
 
 ```typescript
 type Config = {
-  rpc: string;
-  network: string;
+  rpc: string,
+  network: string,
   bcd: {
-    api: string;
-    gui: string;
-  };
+    api: string,
+    gui: string
+  },
   contracts?: {
-    nftFaucet?: string;
+    nftFaucet?: string
     marketplace?: {
       fixedPrice: {
         tez: string;
-      };
-    };
-  };
-};
+      }
+    }
+  }
+}
 ```
 
 ### Installation
@@ -230,7 +226,7 @@ type Config = {
 To install and build the dependences required for local development, run:
 
 ```sh
-yarn install
+$ yarn install
 ```
 
 The installation process will fetch toplevel NPM dependences
@@ -305,16 +301,3 @@ will quit the React Scripts process. To teardown the Docker compose system, run:
 ```sh
 yarn teardown:sandbox
 ```
-
-### Package Scripts
-
-- `npm run start` Default: starts the dev server with custom config
-- `npm run start:testnet` Testnet: start the dev server with testnet config
-- `npm run start:custom` Custom: start the dev server with custom config
-- `npm run start:mainnet` Mainnet: start the dev server with mainnet config
-- `npm run start:sandbox` Sandbox: start the dev server with sandbox config
-- `npm run start:dev` Dev: start the dev server with current config
-- `npm run build` Default: build the project files with current config
-- `npm run build:testnet` Testnet: build the project files with testnet config
-- `npm run build:custom` Custom: build the project files with custom config
-- `npm run build:mainnet` Mainnet: build the project files with mainnet config
